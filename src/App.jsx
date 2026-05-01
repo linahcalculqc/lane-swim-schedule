@@ -5,24 +5,32 @@ const FACILITIES = {
     key: "plant-recreation-centre",
     name: "Plant",
     sub: "930 Somerset W",
-    color: "#ff4d6d",
-    accent: "#ff8fa3",
+    color: "#fc7ffc",
+    accent: "#fc7ffc",
     reserve: false,
   },
   lowertown: {
     key: "lowertown-community-centre-and-pool",
     name: "Lowertown",
     sub: "40 Cobourg St",
-    color: "#f77f00",
-    accent: "#fcbf49",
+    color: "#00f7eb",
+    accent: "#00f7eb",
     reserve: false,
+  },
+  jackpurcell: {
+  key: "jack-purcell-community-centre",
+  name: "Jack Purcell",
+  sub: "320 Jack Purcell Lane",
+  color: "#2d8b64",
+  accent: "#2d8b64",
+  reserve: true,
   },
   stlaurent: {
     key: "st-laurent-complex",
     name: "St. Laurent",
     sub: "525 Côté St",
-    color: "#4cc9f0",
-    accent: "#90e0ef",
+    color: "#934cf0",
+    accent: "#934cf0",
     reserve: true,
   },
 };
@@ -131,13 +139,13 @@ export default function App() {
             fontWeight: 700,
             margin: "0 0 4px",
             fontFamily: "'DM Mono', monospace",
-            letterSpacing: -1,
+            letterSpacing: 1,
             lineHeight: 1.1,
           }}>
             Lane Swim
           </h1>
-          <div style={{ fontSize: 20, color: "#d81c1c", marginBottom: 24, letterSpacing: 1 }}>
-            Sessions starting 2:30 PM or later · Plant · Lowertown · St. Laurent
+          <div style={{ fontSize: 20, color: "#ffa1e8", marginBottom: 24, letterSpacing: 1 }}>
+            Sessions starting 2:30 PM or later · Plant Bath· Lowertown Pool (Le Patro)· St. Laurent Complex · Jack Purcell 
           </div>
 
           {/* Day tabs */}
@@ -150,7 +158,7 @@ export default function App() {
                   onClick={() => setActiveDay(i)}
                   style={{
                     background: isActive ? "#e2e21a" : "transparent",
-                    color: isActive ? "#ffffff" : "#cabeec",
+                    color: isActive ? "#977ddf" : "#977ddf",
                     border: "none",
                     padding: "8px 14px",
                     fontSize: 14,
@@ -307,7 +315,6 @@ export default function App() {
           }}>
             <span style={{ color: "#4cc9f0" }}>◆</span> St. Laurent requires reservation via FrontDesk — opens 6 PM, 2 days prior.<br />
             <span style={{ color: "#ff4d6d" }}>◆</span> Plant walk-in. Lowertown walk-in. Schedules subject to change.<br />
-            <span style={{ color: "#e6bfeb" }}>◆</span> Data: data.ottrec.ca · City of Ottawa · Jack Purcell is a therapeutic pool, not a lap pool.
           </div>
         )}
       </div>
