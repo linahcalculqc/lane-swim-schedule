@@ -144,10 +144,9 @@ export default function App() {
           }}>
             Lane Swim
           </h1>
-          <div style={{ fontSize: 20, color: "#ffa1e8", marginBottom: 24, letterSpacing: 1 }}>
-            Sessions starting 2:30 PM or later · Plant Bath· Lowertown Pool (Le Patro)· St. Laurent Complex · Jack Purcell 
+          <div style={{ fontSize: 16, color: "#ffa1e8", marginBottom: 24, letterSpacing: 1 }}>
+            Sessions starting 2:30 pm or later at the these central locations in Ottawa: Plant Bath - 930 Somerset W · Lowertown Pool - 40 Cobourg (Le Patro)· St. Laurent Complex - 525 Côté · Jack Purcell - 320 Jack Purcell ·   
           </div>
-
           {/* Day tabs */}
           <div style={{ display: "flex", gap: 2, overflowX: "auto", paddingBottom: 0 }}>
             {DAY_SHORT.map((d, i) => {
@@ -218,23 +217,25 @@ export default function App() {
                 <span style={{ fontSize: 15, fontWeight: 700, color: fac.color, letterSpacing: -0.5 }}>
                   {fac.name}
                 </span>
-                <span style={{ fontSize: 10, color: "#444", letterSpacing: 1 }}>
+                <span style={{ fontSize: 12, color: "#57fff7", letterSpacing: 1 }}>
                   {fac.sub}
                 </span>
                 {fac.reserve && (
-                  <span style={{
-                    marginLeft: "auto",
-                    fontSize: 14,
-                    letterSpacing: 1.5,
-                    color: "#4cc9f0",
-                    background: "#0a1a24",
-                    border: "1px solid #1a3a4a",
-                    padding: "2px 6px",
-                    borderRadius: 3,
-                    textTransform: "uppercase",
-                  }}>
-                    Reserve
-                  </span>
+                  <a href="https://reservation.frontdesksuite.ca/rcfs/ottawacity" target="_blank" rel="noreferrer" style={{
+  marginLeft: "auto",
+  fontSize: 12,
+  letterSpacing: 1.5,
+  color: "#4cc9f0",
+  background: "#0a1a24",
+  border: "1px solid #1a3a4a",
+  padding: "2px 6px",
+  borderRadius: 3,
+  textTransform: "uppercase",
+  textDecoration: "none",
+  cursor: "pointer",
+}}>
+  Reserve
+</a>
                 )}
               </div>
 
