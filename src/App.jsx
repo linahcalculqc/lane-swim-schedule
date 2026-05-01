@@ -246,11 +246,10 @@ export default function App() {
                 )}
               </div>
 
-              {/* Slots */}
               {slots.length === 0 ? (
-                <div style={{ padding: "12px 18px", fontSize: 11, color: "#333", letterSpacing: 1 }}>
-                  — no after-work lane swim —
-                </div>
+  <div style={{ padding: "12px 18px", fontSize: 12, color: "#a3da3c", letterSpacing: 1 }}>
+    {id === "champagne" ? "⚠ The pool and gym facilities are closed for roof repair from Friday, May 1 – Monday, August 31, 2026" : "— no after-work lane swim —"}
+  </div>
               ) : (
                 <div style={{ padding: "8px 0" }}>
                   {slots.map((s, i) => {
