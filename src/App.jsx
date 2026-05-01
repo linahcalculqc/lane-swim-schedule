@@ -4,7 +4,7 @@ const FACILITIES = {
   plant: {
     key: "plant-recreation-centre",
     name: "Plant",
-    sub: "930 Somerset W",
+    sub: "930 Somerset W.",
     color: "#fc7ffc",
     accent: "#fc7ffc",
     reserve: false,
@@ -12,7 +12,7 @@ const FACILITIES = {
   lowertown: {
     key: "lowertown-community-centre-and-pool",
     name: "Lowertown",
-    sub: "40 Cobourg St",
+    sub: "40 Cobourg Street",
     color: "#00f7eb",
     accent: "#00f7eb",
     reserve: false,
@@ -21,18 +21,26 @@ const FACILITIES = {
   key: "jack-purcell-community-centre",
   name: "Jack Purcell",
   sub: "320 Jack Purcell Lane",
-  color: "#2d8b64",
-  accent: "#2d8b64",
+  color: "#fc7ffc",
+  accent: "#fc7ffc",
   reserve: true,
   },
   stlaurent: {
     key: "st-laurent-complex",
     name: "St. Laurent",
-    sub: "525 Côté St",
-    color: "#934cf0",
-    accent: "#934cf0",
+    sub: "525 Côté Street",
+    color: "#00f7eb",
+    accent: "#00f7eb",
     reserve: true,
   },
+  champagne: {
+  key: "champagne-bath",
+  name: "Champagne",
+  sub: "321 King Edward Ave",
+  color: "#fc7ffc",
+  accent: "#fc7ffc",
+  reserve: false,
+},
 };
 
 const DAYS = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
@@ -145,8 +153,7 @@ export default function App() {
             Lane Swim
           </h1>
           <div style={{ fontSize: 16, color: "#ffa1e8", marginBottom: 24, letterSpacing: 1 }}>
-            Sessions starting 2:30 pm or later at the these central locations in Ottawa: Plant Bath - 930 Somerset W · Lowertown Pool - 40 Cobourg (Le Patro)· St. Laurent Complex - 525 Côté · Jack Purcell - 320 Jack Purcell ·   
-          </div>
+            Sessions starting 2:30 pm or later at the these central locations in Ottawa: Plant Bath - 930 Somerset W · Lowertown Pool - 40 Cobourg (Le Patro)· St. Laurent Complex - 525 Côté · Jack Purcell - 320 Jack Purcell · Champagne Bath - 321 King Edward ·          </div>
           {/* Day tabs */}
           <div style={{ display: "flex", gap: 2, overflowX: "auto", paddingBottom: 0 }}>
             {DAY_SHORT.map((d, i) => {
@@ -315,7 +322,7 @@ export default function App() {
             lineHeight: 1.8,
           }}>
             <span style={{ color: "#4cc9f0" }}>◆</span> St. Laurent requires reservation via FrontDesk — opens 6 PM, 2 days prior.<br />
-            <span style={{ color: "#ff4d6d" }}>◆</span> Plant walk-in. Lowertown walk-in. Schedules subject to change.<br />
+            <span style={{ color: "#ff4d6d" }}>◆</span> All other swims are walk-in. <a href="https://www.613today.ca/drop-in/swim" target="_blank" rel="noreferrer" style={{color: "inherit", textDecoration: "underline"}}>Schedules subject to change</a>.<br />
           </div>
         )}
       </div>
