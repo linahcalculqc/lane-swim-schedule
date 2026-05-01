@@ -320,8 +320,8 @@ export default function App() {
             letterSpacing: 0.5,
             lineHeight: 1.8,
           }}>
-            <span style={{ color: "#4cc9f0" }}>◆</span> St. Laurent requires reservation via FrontDesk — opens 6 PM, 2 days prior.<br />
-            <span style={{ color: "#ff4d6d" }}>◆</span> All other swims are walk-in. <a href="https://www.613today.ca/drop-in/swim" target="_blank" rel="noreferrer" style={{color: "inherit", textDecoration: "underline"}}>Schedules subject to change</a>.<br />
+            <span style={{ color: "#4cc9f0" }}>◆</span> St. Laurent requires reservation <br /> - 2 days prior - <br />
+            <span style={{ color: "#ff4d6d" }}>◆</span> All other swims are walk-in. <a href="https://www.613today.ca/drop-in/swim" target="_blank" rel="noreferrer" style={{color: "inherit", textDecoration: "underline"}}><br />Schedules subject to change</a>.<br />
           </div>
         )}
       </div>
