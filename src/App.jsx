@@ -247,8 +247,8 @@ export default function App() {
               </div>
 
               {slots.length === 0 ? (
-  <div style={{ padding: "12px 18px", fontSize: 14, color: "#a3da3c", letterSpacing: 1 }}>
-    {id === "champagne" ? "⚠ The pool and gym facilities are closed for roof repair from Friday, May 1 – Monday, August 31, 2026" : "— no after-work lane swim —"}
+  <div style={{ padding: "12px 18px", fontSize: 14, color: "#fffc48", letterSpacing: 1 }}>
+    {id === "champagne" ? "⚠ The pool and gym facilities are closed for roof repair <br /> Friday, May 1 – Monday, August 31, 2026 <br />" : "— no after-work lane swim —"}
   </div>
               ) : (
                 <div style={{ padding: "8px 0" }}>
